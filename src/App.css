@@ -1,0 +1,7 @@
+*{
+  margin:0; /* So that we can use entire space*/
+  
+}
+.app{
+  background-color: #111;
+}

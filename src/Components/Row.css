@@ -1,0 +1,29 @@
+.row{
+    margin-left: 20px;
+    color: white;
+}
+.row__poster{
+    width: 100%;
+    object-fit: contain; /* object-fit property is used to specify how an <img> should be resized to fit its container.*/
+    max-height: 150px;
+    transition: transform 450ms ;
+    margin-right: 10px;
+}
+.row__posters{
+    display: flex;
+    overflow-y: hidden;  /*Along y-axis nothing is done*/
+    overflow-x: scroll;  /* Along x-axis scrolling is allowed*/
+    padding: 20px;
+}
+.row__posters::-webkit-scrollbar{
+    display: none;
+}
+.row__poster:hover{
+ transform: scale(1.08);
+}
+.row__posterLarge{
+    max-height: 250px;
+}
+.row__posterLarge:hover{
+    transform: scale(1.09); 
+}
